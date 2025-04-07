@@ -11,6 +11,7 @@ body {
   color: #333;
   text-align: center;
   padding: 20px;
+  min-height: 100vh;
 }
 
 .container {
@@ -31,8 +32,9 @@ h1 {
 }
 
 button, .btn {
+  display: inline-block;
   padding: 10px 20px;
-  margin: 10px;
+  margin: 10px auto;
   font-size: 16px;
   border: none;
   background-color: #444;
@@ -50,13 +52,13 @@ ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
-  max-height: 60vh; /* altura mais flexível */
-  overflow-y: auto;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   text-align: left;
+  max-height: none;
+  overflow: visible;
 }
 
 li {
@@ -88,12 +90,12 @@ li:last-child {
     font-size: 18px;
   }
 
-  ul {
-    max-height: 50vh;
-  }
-
   li {
     font-size: 14px;
     padding: 8px;
+  }
+
+  .container {
+    padding: 0 10px;
   }
 }

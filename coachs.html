@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coachs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Shields</h1>
+
+    <input type="text" id="searchInput" placeholder="Search coach..." class="search-bar">
+
+    
+<ul>
+	<li>Carlo Ancelotti</li>
+    <li>Will Still</li>
+	<li>Thiago Motta</li>
+	<li>Karel Geraerts</li>
+	<li>Xabi Alonso</li>
+	<li>Ruben Amorim</li>
+	<li>Paulo Pezzolano</li>
+	<li>Eduardo Coudet</li>
+	<li>Andoni Iraola</li>
+	<li>Sebastian Hoene</li>
+	<li>Enzo Maresca</li>
+	<li>Vincent Kompany</li>
+	<li>Igor Tudor</li>
+	<li>Michel Der Zakarian</li>
+	<li>Daniel Farke</li>
+	<li>Gary O’Neil</li>
+	<li>Rudi Garcia</li>
+	<li>José Luis Mendilibar</li>
+	<li>Philippe Clement</li>
+	<li>Paulo Sousa</li>
+	<li>Francesco Farioli</li>
+	<li>Fernando Diniz</li>
+	<li>Jorge Jesus</li>
+	<li>Abel Ferreira</li>
+	<li>Marcelo Gallardo</li>
+	<li>Domenico Tedesco</li>
+	<li>Roger Schmidt</li>
+	<li>Unai Emery</li>
+	<li>Bruno Génésio</li>
+	<li>Christophe Galtier</li>
+	<li>Luciano Spalletti</li>
+	<li>Gerardo Martino</li>
+	<li>Jorge Sampaoli</li>
+	<li>Marcelo Bielsa</li>
+	<li>Julen Lopetegui</li>
+	<li>Maurizio Sarri</li>
+	<li>Quique Setién</li>
+	<li>Mark van Bommel</li>
+	<li>Carlos Carvalhal</li>
+	<li>Juan Reynoso</li>
+	<li>Jesse Marsch</li>
+	<li>José Mourinho</li>
+	<li>Pep Guardiola</li>
+	<li>Jürgen Klopp</li>
+	<li>Diego Simeone</li>
+	<li>Louis van Gaal</li>
+	<li>Didier Deschamps</li>
+	<li>Tite</li>
+	<li>Hansi Flick</li>
+
+</ul>
+  
+<br>
+    <a href="index.html" class="btn">Voltar</a>
+  </div>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', function () {
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('ul li');
+
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Players</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Players</h1>
+
+    <input type="text" id="searchInput" placeholder="Search player..." class="search-bar">
+<br>
+    
+<ul>
+    <li>Akanji</li>
+    <li>Bacha</li>
+    <li>Burki</li>
+    <li>Endo</li>
+    <li>Gunter</li>
+    <li>Jorginho</li>
+    <li>Kimmich</li>
+    <li>Kobel</li>
+    <li>Lamine Yamal</li>
+    <li>Sommer</li>
+    <li>Lodeiro</li>
+    <li>Makengo</li>
+    <li>Marquinhos</li>
+    <li>Messi</li>
+    <li>Palhinha</li>
+    <li>Schlotterbeck</li>
+    <li>Scott</li>
+    <li>Thuram</li>
+    <li>Tonali</li>
+    <li>William Carvalho</li>
+    <li>Yoshida</li>
+    <li>Bompastor</li>
+    <li>Dempsey</li>
+    <li>Rui Costa</li>
+</ul>
+    <br>
+    <a href="players2.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', function () {
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('ul li');
+  
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>

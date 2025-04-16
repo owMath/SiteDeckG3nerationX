@@ -11,27 +11,29 @@
     <img src="logo.png" alt="Logotipo" class="logo">
     <h1>Deck G3nerationX Database</h1>
 
-    <a href="players.html" class="btn">Players Real Photo</a>
-    <a href="players2.html" class="btn">Players EAFC</a>
-    <a href="shields.html" class="btn">Shields</a>
-	<a href="coachs.html" class="btn">Coachs</a>
+    <div class="menu-buttons">
+      <a href="players.html" class="btn">Players Real Photo</a>
+      <a href="players2.html" class="btn">Players EAFC</a>
+      <a href="shields.html" class="btn">Shields</a>
+      <a href="coachs.html" class="btn">Coachs</a>
+    </div>
 
     <p id="lastModified" style="margin-top: 30px; font-size: 14px; color: #666;"></p>
 
-    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
-      <a href="https://discord.gg/g3x" target="_blank">
+    <div class="social-icons">
+      <a href="https://discord.gg/g3x" target="_blank" class="social-icon">
         <img src="dc.jpg" alt="Discord" width="64" height="64">
       </a>
-      <a href="https://www.instagram.com/g3nerationx_packopener/" target="_blank">
+      <a href="https://www.instagram.com/g3nerationx_packopener/" target="_blank" class="social-icon">
         <img src="ig.png" alt="Instagram" width="64" height="64">
       </a>
     </div>
   </div>
 
   <script>
+    // Display the last modified date
     const lastModified = document.lastModified;
     document.getElementById('lastModified').innerText = `Última edição: ${lastModified}`;
   </script>
 </body>
-
 </html>

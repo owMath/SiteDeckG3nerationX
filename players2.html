@@ -3,67 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Players</title>
+  <title>Players EAFC</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional styles specific to this page */
+    .player-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    
+    .category-btn {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .category-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .back-btn {
+      margin-top: 40px;
+    }
+    
+    @media (max-width: 480px) {
+      .category-btn {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <img src="logo.png" alt="Logotipo" class="logo">
     <h1>Players EAFC</h1>
-<br>
-<a href="futbirthdayiconsfc25.html" class="btn">FUT Birthday Icons FC25</a>
-<br>
-<br>
-<br>
-<a href="futurestarsfc25.html" class="btn">FutureStars FC25</a>
-<br>
-<br>
-<br>
-<a href="iconsfc25.html" class="btn">Icons FC25</a>
-<br>
-<br>
-<br>
-<a href="immortals1fc25.html" class="btn">Immortals Icon 1 FC25</a>
-<br>
-<br>
-<br>
-<a href="immortals1fc25.html" class="btn">Immortals Icon 2 FC25</a>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <a href="index.html" class="btn">Back</a>
-  </div>
 
-  <script>
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('keyup', function () {
-      const filter = searchInput.value.toLowerCase();
-      const listItems = document.querySelectorAll('ul li');
-  
-      listItems.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        item.style.display = text.includes(filter) ? '' : 'none';
-      });
-    });
-  </script>
-  
+    <div class="player-categories">
+      <a href="futbirthdayiconsfc25.html" class="btn category-btn">FUT Birthday Icons FC25</a>
+      <a href="futurestarsfc25.html" class="btn category-btn">FutureStars FC25</a>
+      <a href="iconsfc25.html" class="btn category-btn">Icons FC25</a>
+      <a href="immortals1fc25.html" class="btn category-btn">Immortals Icon 1 FC25</a>
+      <a href="immortals1fc25.html" class="btn category-btn">Immortals Icon 2 FC25</a>
+    </div>
+
+    <a href="index.html" class="btn back-btn">Back</a>
+  </div>
 </body>
 </html>

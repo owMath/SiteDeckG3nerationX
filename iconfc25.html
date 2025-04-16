@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Players</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Players</h1>
+
+    <input type="text" id="searchInput" placeholder="Search player..." class="search-bar">
+<br>
+    
+<ul>
+	<li>Abily</li>
+	<li>Angerer</li>
+	<li>Baggio</li>
+	<li>Bale</li>
+	<li>Baresi</li>
+	<li>Barnes</li>
+	<li>Beckenbauer</li>
+	<li>Beckham</li>
+	<li>Bergkamp</li>
+	<li>Best</li>
+	<li>Blanc</li>
+	<li>Buffon</li>
+	<li>Cafu</li>
+	<li>Campbell</li>
+	<li>Cannavaro</li>
+	<li>Cantona</li>
+	<li>Carles Puyol</li>
+	<li>Carlos Alberto</li>
+	<li>Casillas</li>
+	<li>Cech</li>
+	<li>Charlton</li>
+	<li>Cole</li>
+	<li>Crespo</li>
+	<li>Cruyff</li>
+	<li>Dalglish</li>
+	<li>Del Piero</li>
+	<li>Desailly</li>
+	<li>Drogba</li>
+	<li>Emilio Butrangueño</li>
+	<li>Essien</li>
+	<li>Eto'o</li>
+	<li>Eusébio</li>
+	<li>Ferdinand</li>
+	<li>Fernando Hierro</li>
+	<li>Fernando Torres</li>
+	<li>Foudy</li>
+	<li>Garrincha</li>
+	<li>Gattuso</li>
+	<li>Gerrard</li>
+	<li>Gullit</li>
+	<li>Hagi</li>
+	<li>Hamm</li>
+	<li>Henry</li>
+	<li>Hernández</li>
+	<li>Jairzinho</li>
+	<li>Kaká</li>
+	<li>Keane</li>
+	<li>Klose</li>
+	<li>Kluivert</li>
+	<li>Koeman</li>
+	<li>Lahm</li>
+	<li>Lampard</li>
+	<li>Larsson</li>
+	<li>Laudrup</li>
+	<li>Laudrup</li>
+	<li>Lineker</li>
+	<li>Luís Figo</li>
+	<li>Makélélé</li>
+	<li>Maldini</li>
+	<li>Maradona</li>
+	<li>Matthaus</li>
+	<li>Miyama</li>
+	<li>Moore</li>
+	<li>Muller</li>
+	<li>Nedved</li>
+	<li>Nesta</li>
+	<li>Owen</li>
+	<li>Pelé</li>
+	<li>Petit</li>
+	<li>Pichon</li>
+	<li>Pirès</li>
+	<li>Pirlo</li>
+	<li>Prinz</li>
+	<li>Puskás</li>
+	<li>Raúl</li>
+	<li>Ribéry</li>
+	<li>Ribéry</li>
+	<li>Rijkaard</li>
+	<li>Riquelme</li>
+	<li>Rivaldo</li>
+	<li>Roberto Carlos</li>
+	<li>Ronaldinho</li>
+	<li>Ronaldo</li>
+	<li>Rooney</li>
+	<li>Rush</li>
+	<li>Sánchez</li>
+	<li>Sawa</li>
+	<li>Schelin</li>
+	<li>Schmeichel</li>
+	<li>Scholes</li>
+	<li>Schweinsteiger</li>
+	<li>Shearer</li>
+	<li>Shevchenko</li>
+	<li>Smith</li>
+	<li>Stoichkov</li>
+	<li>Suker</li>
+	<li>Thuram</li>
+	<li>Van Basten</li>
+	<li>Van der Sar</li>
+	<li>Van Nistelrooy</li>
+	<li>Van Persie</li>
+	<li>Verón</li>
+	<li>Vidic</li>
+	<li>Vieira</li>
+	<li>Wright</li>
+	<li>Xabi Alonso</li>
+	<li>Xavi</li>
+	<li>Yashin</li>
+	<li>Zambrotta</li>
+	<li>Zanetti</li>
+	<li>Zico</li>
+	<li>Zidane</li>
+	<li>Zola</li>
+</ul>
+    <br>
+    <a href="index.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', function () {
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('ul li');
+  
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>

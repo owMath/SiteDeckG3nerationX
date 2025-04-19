@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Players</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Players</h1>
+
+    <input type="text" id="searchInput" placeholder="Search player..." class="search-bar">
+<br>
+    
+<ul>
+    <li>Messi (2012)</li>
+    <li>Ronaldo (2013)</li>
+    <li>Ronaldo (2014)</li>
+    <li>Messi (2015)</li>
+    <li>Ronaldo (2016)</li>
+    <li>Ronaldo (2017)</li>
+    <li>Modric (2018)</li>
+    <li>Messi (2019)</li>
+    <li>Messi (2021)</li>
+    <li>Benzema	(2022)</li>
+    <li>Messi (2023)</li>
+    <li>Rodri (2024)</li>
+</ul>
+    <br>
+    <a href="players2.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', function () {
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('ul li');
+  
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>

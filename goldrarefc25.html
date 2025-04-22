@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Players</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Players</h1>
+
+    <input type="text" id="searchInput" placeholder="Search player..." class="search-bar">
+<br>
+    
+<ul>
+    <li>Aitana Bonmati</li>
+    <li>Alexia Putellas</li>
+    <li>Alisson</li>
+    <li>Bellingham</li>
+    <li>Courtois</li>
+    <li>De Bruyne</li>
+    <li>Donnarumma</li>
+    <li>Haaland</li>
+    <li>Hansen</li>
+    <li>Kane</li>
+    <li>Kerr</li>
+    <li>Martínez</li>
+    <li>Mbappé</li>
+    <li>Odegaard</li>
+    <li>Rodri</li>
+    <li>Salah</li>
+    <li>Ter Stegen</li>
+    <li>Van Dijk</li>
+    <li>Vini Jr.</li>
+    <li>Wilson</li>
+    <li>Bernardo Silva</li>
+    <li>Debinha</li>
+    <li>Diani</li>
+    <li>Ederson</li>
+    <li>Foden</li>
+    <li>Griezmann</li>
+    <li>Hegerberg</li>
+    <li>Irene Paredes</li>
+    <li>Katoto</li>
+    <li>Lewandowski</li>
+    <li>Mapi León</li>
+    <li>Mead</li>
+    <li>Messi</li>
+    <li>Oblak</li>
+    <li>Patri Guijarro</li>
+    <li>Reiten</li>
+    <li>Renard</li>
+    <li>Rúben Dias</li>
+    <li>Rudiger</li>
+    <li>Valverde</li>
+</ul>
+    <br>
+    <a href="players2.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', function () {
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('ul li');
+  
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>

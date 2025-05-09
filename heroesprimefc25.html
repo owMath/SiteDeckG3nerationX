@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Players</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Players</h1>
+
+    <input type="text" id="searchInput" placeholder="Search player..." class="search-bar">
+<br>
+    
+<ul>
+    <li>Carragher</li>
+    <li>Georges</li>
+    <li>Guti</li>
+    <li>Hamsik</li>
+    <li>Hazard</li>
+    <li>Maicon</li>
+    <li>Howard</li>
+    <li>Matuidi</li>
+    <li>Noor</li>
+    <li>Sasic</li>
+    <li>Stam</li>
+    <li>Toure</li>
+    <li>Willians</li>
+    <li>Zé Roberto</li>
+</ul>
+    <br>
+    <a href="players2.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('keyup', function () {
+      const filter = searchInput.value.toLowerCase();
+      const listItems = document.querySelectorAll('ul li');
+  
+      listItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  </script>
+  
+</body>
+</html>
